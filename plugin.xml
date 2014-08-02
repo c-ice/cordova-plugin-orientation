@@ -22,7 +22,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="ScreenOrientation">
-                <param name="ios-package" value="ScreenOrientation" onload="true" />
+                <param name="ios-package" value="ScreenOrientation" />
             </feature>
         </config-file>
         
