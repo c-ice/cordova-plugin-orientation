@@ -2,10 +2,10 @@
 
 @implementation ScreenOrientation
 
-- (void) screenorientationFunction:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {
-    [arguments pop];
+- (void) changeOrientation:(CDVInvokedUrlCommand*)command {
+
     
-    NSString *orientation = [arguments objectAtIndex:0];
+    NSString *orientation = [command.arguments objectAtIndex:0];
     
     if ( [orientation isEqualToString:@"LandscapeLeft"] ) {
         NSLog(@"Landscape Left");
