@@ -1,20 +1,16 @@
-cordova.define("sk.softec.cordova.orientation.screenOrientation",
-    function(require, exports, module) {
+
                
-               var argscheck = require('cordova/argscheck'),
-               utils = require('cordova/utils'),
-               exec = require('cordova/exec');
-               
-               
-               
-               var ScreenOrientation = function(){
-               
-               
-               };
+var argscheck = require('cordova/argscheck'),
+	utils = require('cordova/utils'),
+     	exec = require('cordova/exec');
                
                
                
-               ScreenOrientation.changeScreenOrientationTo = function(orientation) {
+        var ScreenOrientation = function(){
+        };
+               
+               
+ScreenOrientation.changeScreenOrientationTo = function(orientation) {
                 exec( function(){console.log("succesfully changed orientation.")},
                     function(){console.log("failed changed orientation.")},
 						   "ScreenOrientation",
@@ -24,4 +20,4 @@ cordova.define("sk.softec.cordova.orientation.screenOrientation",
 
                
                module.exports = ScreenOrientation;
-});
+
