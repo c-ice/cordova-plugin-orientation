@@ -5,10 +5,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="sk.softec.cordova.orientation"
     version="0.0.1">
-    <name>Keyboard</name>
+    <name>ScreenOrientation</name>
     <description>Cordova Orientation Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,keyboard</keywords>
+    <keywords>cordova,screen orientation</keywords>
     
 	<engines>
 		<engine name="cordova" version=">=3.4.0" />
