@@ -9,19 +9,31 @@
     
     if ( [orientation isEqualToString:@"LandscapeLeft"] ) {
         NSLog(@"Landscape Left");
-        [[UIApplication sharedApplication] setStatusBarOrientation: UIInterfaceOrientationLandscapeLeft];
+        
+        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:),    UIInterfaceOrientationLandscapeLeft );
+        }
     }
     else if ( [orientation isEqualToString:@"LandscapeRight"] ) {
         NSLog(@"Landscape Right");
-        [[UIApplication sharedApplication] setStatusBarOrientation: UIInterfaceOrientationLandscapeRight];
+        
+        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:),    UIInterfaceOrientationLandscapeRight );
+        }
     }
     else if ( [orientation isEqualToString:@"Portrait"] ) {
         NSLog(@"Portrait");
-        [[UIApplication sharedApplication] setStatusBarOrientation: UIInterfaceOrientationPortrait];
+        
+        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:),    UIInterfaceOrientationPortrait );
+        }
     }
     else if ( [orientation isEqualToString:@"PortraitUpsideDown"] ) {
         NSLog(@"Portrait upSide Down Left");
-        [[UIApplication sharedApplication] setStatusBarOrientation: UIInterfaceOrientationPortraitUpsideDown];
+        
+        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:),    UIInterfaceOrientationPortraitUpsideDown );
+        }
     }
 }
 
