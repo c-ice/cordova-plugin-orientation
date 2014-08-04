@@ -11,11 +11,12 @@ var ScreenOrientation = function(){
 
 function success() {
 	console.log("succesfully changed orientation.");
-	ScreenOrientation.isChangingOrientation = false;
+	window.ScreenOrientation.isChangingOrientation = false;
 }
 
 function failed() {
 	console.log("failed changed orientation.");
+	window.ScreenOrientation.isChangingOrientation = false;
 }
 
 ScreenOrientation.changeScreenOrientationTo = function(orientation) {
