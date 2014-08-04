@@ -21,13 +21,17 @@ function failed() {
 
 ScreenOrientation.changeScreenOrientationTo = function(orientation) {
 
-	window.ScreenOrientation.isChangingOrientation = true;	
+	ScreenOrientation.isChangingOrientation = true;	
 
 	exec( 	success,
 			failed,
 		   	"ScreenOrientation",
 		   	"changeOrientation",
 		   	[orientation]);
+		   	
+	setTimeout(function(){
+		ScreenOrientation.isChangingOrientation = false;
+	}, 100);
 };
 
 
