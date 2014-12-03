@@ -21,8 +21,8 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name=“SCScreenOrientation">
-                <param name="ios-package" value=“SCScreenOrientation" onload="true"/>
+            <feature name="SCScreenOrientation">
+                <param name="ios-package" value="SCScreenOrientation" onload="true"/>
             </feature>
         </config-file>
         
