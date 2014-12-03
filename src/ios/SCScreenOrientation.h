@@ -1,15 +1,15 @@
 //
-//  ScreenOrientation.h
-//  Oskar
+//  SCScreenOrientation.h
+//  Max
 //
-//  Created by instalater on 21/05/14.
+//  Created by cice on 21/05/14.
 //
 //
 
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface ScreenOrientation : CDVPlugin
+@interface SCScreenOrientation : CDVPlugin
 
 - (void)changeOrientation:(CDVInvokedUrlCommand*)command;
 

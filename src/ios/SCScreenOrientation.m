@@ -1,6 +1,6 @@
-#import "ScreenOrientation.h"
+#import "SCScreenOrientation.h"
 
-@implementation ScreenOrientation
+@implementation SCScreenOrientation
 
 - (void) changeOrientation:(CDVInvokedUrlCommand*)command {
     

@@ -25,7 +25,7 @@ SCScreenOrientation.changeScreenOrientationTo = function(orientation) {
 
 	exec( 	success,
 			failed,
-		   	“SCScreenOrientation",
+		   	"SCScreenOrientation",
 		   	"changeOrientation",
 		   	[orientation]);
 		   	
