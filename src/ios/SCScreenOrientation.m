@@ -2,6 +2,22 @@
 
 @implementation SCScreenOrientation
 
+- (CDVPlugin*)initWithWebView:(UIWebView*)theWebView
+{
+    self = [super initWithWebView:theWebView];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onOrientationWillChange) name:UIApplicationWillChangeStatusBarOrientationNotification object:nil];
+    }
+    
+    return self;
+}
+
+- (void) onOrientationWillChange {
+    NSString *jsCall = @"window.onOrientationWillChange && window.onOrientationWillChange()";
+    
+    [self.webView stringByEvaluatingJavaScriptFromString:jsCall];
+}
+
 - (void) changeOrientation:(CDVInvokedUrlCommand*)command {
     
     
